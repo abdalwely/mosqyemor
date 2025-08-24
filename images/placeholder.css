@@ -1,18 +1,5 @@
 /* Placeholder styles for missing images */
-.logo {
-  background: #4b8f28;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-}
-
-.logo::before {
-  content: "LOGO";
-  font-size: 12px;
-}
+/* Logo styles removed as requested */
 
 .qr {
   background: #e0e0e0;
