@@ -39,8 +39,9 @@ body {
 }
 
 .left-img {
-  width: 10vw;
+  width: 12vw;
   height: auto;
+margin-bottom: 20px;
   object-fit: contain;
 }
 
@@ -329,7 +330,7 @@ body {
   font-size: 1.8vw;
 }
 
-/* الو��ف أو العنوان الفرعي (مثلاً: المرحلة الحالية) */
+/* الو��ف أ�� العنوان الفرعي (مثلاً: المرحلة الحالية) */
 .progress-section p {
   color: #809b30;
   font-size: 1rem;
@@ -772,19 +773,34 @@ body {
   margin-right: 60%;
   /* نسبة بدلاً من بكسل */
 }
+/* حاوية التايملاين مع التسمية */
+.timeline-container-with-label {
+  position: relative;
+}
+
 .timeline-label2 {
+  position: absolute;
   font-size: 12px;
   color: #555861;
   font-weight: 600;
-  margin-bottom: 80px;
-  margin-right: 65%;
-  /* نسبة بدلاً من بكسل */
+  top: 70px;
+  right: 75.5%;
+  transform: translateX(50%);
+  white-space: nowrap;
+  z-index: 10;
 }
 /* للشاشات المتوسطة */
 @media (max-width: 992px) {
   .timeline-label1 {
     margin-right: 59%;
   }
+
+  .timeline-label2 {
+    top: 55px;
+    right: 77%;
+    font-size: 11px;
+  }
+
   .countdown-number {
     font-size: 4vw;
   }
@@ -813,14 +829,17 @@ body {
 /* ل��شاشات الصغيرة */
 @media (max-width: 768px) {
   .timeline-label2 {
-    margin-right: 58%;
+    top: 55px;
+    right: 78%;
+    font-size: 10px;
   }
 }
 
 /* للهواتف */
 @media (max-width: 480px) {
   .timeline-label2 {
-    margin-right: 59%;
+    top: 55px;
+    right: 79%;
     font-size: 8px;
   }
 
